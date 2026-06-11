@@ -8,7 +8,9 @@ import numpy as np
 try:
     import torchaudio
 
-    TORCHAUDIO_AVAILABLE = True
+    # torchaudio.save/load need an I/O backend (ffmpeg, sox, or soundfile);
+    # torchaudio can be importable with none installed.
+    TORCHAUDIO_AVAILABLE = len(torchaudio.list_audio_backends()) > 0
 except ImportError:
     TORCHAUDIO_AVAILABLE = False
 

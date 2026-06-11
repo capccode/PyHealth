@@ -498,7 +498,7 @@ if __name__ == "__main__":
     """
 
     dataset = CardiologyDataset(
-        root="/srv/local/data/physionet.org/files/challenge-2020/1.0.2/training",
+        root="/path/to/data/physionet.org/files/challenge-2020/1.0.2/training",
         dev=True,
         refresh_cache=True,
     )

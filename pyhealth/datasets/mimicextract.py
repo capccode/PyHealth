@@ -69,7 +69,7 @@ class MIMICExtractDataset(BaseEHRDataset):
     Examples:
         >>> from pyhealth.datasets import MIMICExtractDataset
         >>> dataset = MIMICExtractDataset(
-        ...         root="/srv/local/data/physionet.org/files/mimiciii/1.4",
+        ...         root="/path/to/data/physionet.org/files/mimiciii/1.4",
         ...         tables=["DIAGNOSES_ICD", "NOTES"], TODO: What here?
         ...         code_mapping={"NDC": ("ATC", {"target_kwargs": {"level": 3}})},
         ...     )

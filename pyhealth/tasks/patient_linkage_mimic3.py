@@ -18,7 +18,7 @@ class PatientLinkageMIMIC3Task(BaseTask):
         >>> from pyhealth.datasets import MIMIC3Dataset
         >>> from pyhealth.tasks import patient_linkage_mimic3
         >>> dataset = MIMIC3Dataset(
-        ...     root="/srv/local/data/physionet.org/files/mimiciii/1.4",
+        ...     root="/path/to/data/physionet.org/files/mimiciii/1.4",
         ...     tables=["DIAGNOSES_ICD", "ADMISSIONS", "PATIENTS"],
         ...     code_mapping={"ICD9CM": ("CCSCM", {"target": "dx"})},
         ... )

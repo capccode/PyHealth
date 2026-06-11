@@ -18,6 +18,8 @@ from pyhealth.models.transformer_deid import (
 )
 from pyhealth.processors.text_processor import TextProcessor
 
+from tests.base import hf_hub_accessible
+
 
 def _make_dataset():
     """Create a minimal in-memory dataset matching DeIDNERTask output."""
@@ -84,6 +86,9 @@ class TestAlignLabels(unittest.TestCase):
         self.assertEqual(result, [IGNORE_INDEX, IGNORE_INDEX])
 
 
+@unittest.skipUnless(
+    hf_hub_accessible(), "Hugging Face Hub not accessible"
+)
 class TestTransformerDeIDInit(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -111,6 +116,9 @@ class TestTransformerDeIDInit(unittest.TestCase):
         self.assertEqual(self.model.encoder.config.hidden_size, 768)
 
 
+@unittest.skipUnless(
+    hf_hub_accessible(), "Hugging Face Hub not accessible"
+)
 class TestTransformerDeIDForward(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

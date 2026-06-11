@@ -1,6 +1,29 @@
 from typing import Type
+import functools
 import unittest
 import logging
+
+
+@functools.lru_cache(maxsize=None)
+def hf_hub_accessible(timeout: float = 5.0) -> bool:
+    """Return whether the Hugging Face Hub can be reached over HTTPS.
+
+    Tests that download models/tokenizers from the Hub should be guarded
+    with ``@unittest.skipUnless(hf_hub_accessible(), ...)`` so they run in
+    CI (which has internet access) but skip gracefully in sandboxed or
+    offline environments.  An HTTP-level check is required: restrictive
+    proxies accept the TCP connection and reject at the HTTP layer.
+    """
+    import urllib.request
+
+    try:
+        request = urllib.request.Request(
+            "https://huggingface.co/api/models?limit=1", method="HEAD"
+        )
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            return 200 <= response.status < 400
+    except Exception:
+        return False
 
 
 class BaseTestCase(unittest.TestCase):

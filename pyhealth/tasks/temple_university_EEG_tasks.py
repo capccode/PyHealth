@@ -25,7 +25,7 @@ class EEGEventsTUEV(BaseTask):
         >>> from pyhealth.datasets import TUEVDataset
         >>> from pyhealth.tasks import EEGEventsTUEV
         >>> dataset = TUEVDataset(
-        ...         root="/srv/local/data/TUH/tuh_eeg_events/v2.0.0/edf/",
+        ...         root="/path/to/data/TUH/tuh_eeg_events/v2.0.0/edf/",
         ...     )
         >>> sample_dataset = dataset.set_task(EEGEventsTUEV())
         >>> sample = sample_dataset[0]
@@ -219,7 +219,7 @@ class EEGAbnormalTUAB(BaseTask):
         >>> from pyhealth.datasets import TUABDataset
         >>> from pyhealth.tasks import EEGAbnormalTUAB
         >>> dataset = TUABDataset(
-        ...         root="/srv/local/data/TUH/tuh_eeg_abnormal/v3.0.0/edf/",
+        ...         root="/path/to/data/TUH/tuh_eeg_abnormal/v3.0.0/edf/",
         ...     )
         >>> sample_dataset = dataset.set_task(EEGAbnormalTUAB())
         >>> sample = sample_dataset[0]

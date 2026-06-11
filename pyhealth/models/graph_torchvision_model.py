@@ -264,7 +264,7 @@ if __name__ == "__main__":
     from pyhealth.datasets import COVID19CXRDataset, split_by_sample
 
     base_dataset = COVID19CXRDataset(
-        root="/srv/local/data/COVID-19_Radiography_Dataset",
+        root="/path/to/data/COVID-19_Radiography_Dataset",
     )
 
     sample_dataset = base_dataset.set_task()

@@ -42,12 +42,12 @@ Build, test, and deploy healthcare machine learning models with ease. PyHealth i
    :target: https://pypi.org/project/pyhealth/
    :alt: PyPI version
 
-.. image:: https://img.shields.io/github/stars/yzhao062/pyhealth.svg
+.. image:: https://img.shields.io/github/stars/sunlabuiuc/pyhealth.svg
    :target: https://github.com/sunlabuiuc/pyhealth/stargazers
    :alt: GitHub stars
 
 
-.. image:: https://img.shields.io/github/forks/yzhao062/pyhealth.svg?color=blue
+.. image:: https://img.shields.io/github/forks/sunlabuiuc/pyhealth.svg?color=blue
    :target: https://github.com/sunlabuiuc/pyhealth/network
    :alt: GitHub forks
 
@@ -74,32 +74,6 @@ Build, test, and deploy healthcare machine learning models with ease. PyHealth i
  **[News!]** We are continuously implementing good papers and benchmarks into PyHealth, checkout the `[Planned List] <https://docs.google.com/spreadsheets/d/1PNMgDe-llOm1SM5ZyGLkmPysjC4wwaVblPLAHLxejTw/edit#gid=159213380>`_. Welcome to pick one from the list and send us a PR or add more influential and new papers into the plan list.
 
 ----------
-
-
-.. -----
-
-
-.. **Build Status & Coverage & Maintainability & License**
-
-.. .. image:: https://travis-ci.org/yzhao062/pyhealth.svg?branch=master
-..    :target: https://travis-ci.org/yzhao062/pyhealth
-..    :alt: Build Status
-
-
-.. .. image:: https://ci.appveyor.com/api/projects/status/1kupdy87etks5n3r/branch/master?svg=true
-..    :target: https://ci.appveyor.com/project/yzhao062/pyhealth/branch/master
-..    :alt: Build status
-
-
-.. .. image:: https://api.codeclimate.com/v1/badges/bdc3d8d0454274c753c4/maintainability
-..    :target: https://codeclimate.com/github/yzhao062/pyhealth/maintainability
-..    :alt: Maintainability
-
-
-.. .. image:: https://img.shields.io/github/license/yzhao062/pyhealth
-..    :target: https://github.com/yzhao062/pyhealth/blob/master/LICENSE
-..    :alt: License
-
 
 
 Get Started in Minutes
@@ -193,15 +167,6 @@ Quick Navigation
 
 ..     @article{
 ..     }
-
-
-
-.. **Key Links and Resources**\ :
-
-
-.. * `View the latest codes on Github <https://github.com/ycq091044/PyHealth-OMOP>`_
-.. * `Execute Interactive Jupyter Notebooks <https://mybinder.org/v2/gh/yzhao062/pyhealth/master>`_
-.. * `Check out the PyHealth paper <https://github.com/yzhao062/pyhealth>`_
 
 
 

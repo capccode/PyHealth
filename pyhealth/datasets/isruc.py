@@ -100,7 +100,7 @@ class ISRUCDataset(BaseSignalDataset):
     Examples:
         >>> from pyhealth.datasets import ISRUCDataset
         >>> dataset = ISRUCDataset(
-        ...         root="/srv/local/data/data/ISRUC-I",
+        ...         root="/path/to/data/data/ISRUC-I",
         ...         download=True,
         ...     )
         >>> dataset.stat()
@@ -143,7 +143,7 @@ class ISRUCDataset(BaseSignalDataset):
 
 if __name__ == "__main__":
     dataset = ISRUCDataset(
-        root="/srv/local/data/trash/",
+        root="/path/to/data/trash/",
         dev=True,
         refresh_cache=True,
         download=True,

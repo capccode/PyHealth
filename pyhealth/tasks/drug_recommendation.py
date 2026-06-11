@@ -362,7 +362,7 @@ def drug_recommendation_mimic3_fn(patient: Patient):
     Examples:
         >>> from pyhealth.datasets import MIMIC3Dataset
         >>> mimic3_base = MIMIC3Dataset(
-        ...    root="/srv/local/data/physionet.org/files/mimiciii/1.4",
+        ...    root="/path/to/data/physionet.org/files/mimiciii/1.4",
         ...    tables=["DIAGNOSES_ICD", "PROCEDURES_ICD", "PRESCRIPTIONS"],
         ...    code_mapping={"ICD9CM": "CCSCM"},
         ... )
@@ -449,7 +449,7 @@ def drug_recommendation_mimic4_fn(patient: Patient):
     Examples:
         >>> from pyhealth.datasets import MIMIC4Dataset
         >>> mimic4_base = MIMIC4Dataset(
-        ...     root="/srv/local/data/physionet.org/files/mimiciv/2.0/hosp",
+        ...     root="/path/to/data/physionet.org/files/mimiciv/2.0/hosp",
         ...     tables=["diagnoses_icd", "procedures_icd"],
         ...     code_mapping={"ICD10PROC": "CCSPROC"},
         ... )
@@ -715,7 +715,7 @@ def drug_recommendation_omop_fn(patient: Patient):
 if __name__ == "__main__":
     # from pyhealth.datasets import MIMIC3Dataset
     # base_dataset = MIMIC3Dataset(
-    #     root="/srv/local/data/physionet.org/files/mimiciii/1.4",
+    #     root="/path/to/data/physionet.org/files/mimiciii/1.4",
     #     tables=["DIAGNOSES_ICD", "PROCEDURES_ICD", "PRESCRIPTIONS"],
     #     dev=True,
     #     code_mapping={"ICD9CM": "CCSCM"},
@@ -729,7 +729,7 @@ if __name__ == "__main__":
     from pyhealth.datasets import MIMIC4Dataset
 
     base_dataset = MIMIC4Dataset(
-        root="/srv/local/data/physionet.org/files/mimiciv/2.0/hosp",
+        root="/path/to/data/physionet.org/files/mimiciv/2.0/hosp",
         tables=["diagnoses_icd", "procedures_icd", "prescriptions"],
         dev=True,
         code_mapping={"NDC": "ATC"},
@@ -744,7 +744,7 @@ if __name__ == "__main__":
     # from pyhealth.tasks import DrugRecommendationEICU
 
     # base_dataset = eICUDataset(
-    #     root="/srv/local/data/physionet.org/files/eicu-crd/2.0",
+    #     root="/path/to/data/physionet.org/files/eicu-crd/2.0",
     #     tables=["diagnosis", "medication", "physicalExam"],
     #     dev=True,
     #     refresh_cache=False,
@@ -757,7 +757,7 @@ if __name__ == "__main__":
     # from pyhealth.datasets import OMOPDataset
 
     # base_dataset = OMOPDataset(
-    #     root="/srv/local/data/zw12/pyhealth/raw_data/synpuf1k_omop_cdm_5.2.2",
+    #     root="/path/to/data/zw12/pyhealth/raw_data/synpuf1k_omop_cdm_5.2.2",
     #     tables=["condition_occurrence", "procedure_occurrence", "drug_exposure"],
     #     dev=True,
     #     refresh_cache=False,

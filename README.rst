@@ -3,7 +3,7 @@ Welcome to PyHealth!
 
 .. note::
 
-   **This README may be out of date.** For the most up-to-date documentation, tutorials, and API reference, please visit our official documentation site at `pyhealth.readthedocs.io <https://pyhealth.readthedocs.io/en/latest/>`_.
+   **This README covers PyHealth 2.0.** For the full documentation, tutorials, and API reference, please visit our official documentation site at `pyhealth.readthedocs.io <https://pyhealth.readthedocs.io/en/latest/>`_.
 
 .. important::
 

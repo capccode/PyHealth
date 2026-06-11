@@ -4,32 +4,36 @@ Frequently Asked Questions
 ----
 
 
-Blueprint & Development Plan
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+What does PyHealth 2.0 support?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The long term goal of PyHealth is to become a comprehensive healthcare AI toolkit that supports
-beyond EHR data, but also the images and clinical notes.
+PyHealth 2.0 is a comprehensive healthcare AI toolkit that goes beyond
+structured EHR data: it provides a unified API for EHR tables, medical
+images, biosignals (EEG/ECG/sleep), clinical text, and genomics. The
+:doc:`architecture overview <api/overview>` describes how datasets, tasks,
+processors, models, and the trainer fit together.
 
-This is the central place to track important things to be fixed/added:
+Highlights of the 2.0 release:
 
-- The support of image datasets and clinical notes
-- The compatibility and the support of OMOP format datasets
-- Model persistence (save, load, and portability)
-- The release of a benchmark paper with PyHealth
-- Add contact channel with `Gitter <https://gitter.im>`_
-- Support additional languages, see `Manage Translations <https://docs.readthedocs.io/en/latest/guides/manage-translations.html>`_
+- Native datasets for MIMIC-III/IV, eICU, OMOP-CDM, FHIR, and many
+  modality-specific collections (chest X-ray, sleep staging, EEG, ECG).
+- A 5-stage pipeline (dataset → task → processors → model → trainer) with
+  caching and dynamic scaling from laptop to cluster.
+- Post-hoc model calibration (``pyhealth.calib``) and interpretability
+  (``pyhealth.interpret``) that plug into any trained model.
 
-Feel free to open on issue report if needed.
-See `Issues <https://github.com/yzhao062/combo/issues>`_.
+For the roadmap and ways to get involved, see :doc:`how_to_contribute`
+and the `open issues <https://github.com/sunlabuiuc/PyHealth/issues>`_.
 
 
 Inclusion Criteria
 ^^^^^^^^^^^^^^^^^^
 
-Similarly to Similarly to scikit-learn, We mainly consider well-established algorithms for inclusion.
-A rule of thumb is at least two years since publication, 50+ citations, and usefulness.
+Similarly to scikit-learn, we mainly consider well-established algorithms
+for inclusion. A rule of thumb is at least two years since publication,
+50+ citations, and usefulness.
 
-However, we encourage the author(s) of newly proposed models to share and add your implementation into combo
-for boosting ML accessibility and reproducibility.
-This exception only applies if you could commit to the maintenance of your model for at least two year period.
-
+However, we encourage the author(s) of newly proposed models to share and
+add your implementation into PyHealth for boosting ML accessibility and
+reproducibility. This exception only applies if you could commit to the
+maintenance of your model for at least a two-year period.

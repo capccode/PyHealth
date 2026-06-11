@@ -66,7 +66,7 @@ if __name__ == "__main__":
     from pyhealth.datasets import MedicalTranscriptionsDataset, get_dataloader
 
     base_dataset = MedicalTranscriptionsDataset(
-        root="/srv/local/data/zw12/raw_data/MedicalTranscriptions"
+        root="/path/to/data/zw12/raw_data/MedicalTranscriptions"
     )
 
     sample_dataset = base_dataset.set_task()

@@ -6,9 +6,9 @@ Tutorials
 
 `Tutorial 0: Introduction to pyhealth.data <https://colab.research.google.com/drive/17nOzjIjKiAbC8bsntZ3h9xy2Vq4bKpuv?usp=sharing>`_  `[Video] <https://www.youtube.com/watch?v=Nk1itBoLOX8&list=PLR3CNIF8DDHJUl8RLhyOVpX_kT4bxulEV&index=2>`_ 
 
-`Tutorial 1: Introduction to pyhealth.datasets <https://colab.research.google.com/drive/1vI_oljc7rU5ocsC26ITM7HUgD5SGZkFE?usp=sharing>`_  `[Video (PyHealth 1.16)] <https://www.youtube.com/watch?v=c1InKqFJbsI&list=PLR3CNIF8DDHJUl8RLhyOVpX_kT4bxulEV&index=3>`_ 
+`Tutorial 1: Introduction to pyhealth.datasets <https://colab.research.google.com/drive/1vI_oljc7rU5ocsC26ITM7HUgD5SGZkFE?usp=sharing>`_  `[Video (PyHealth 1.x legacy)] <https://www.youtube.com/watch?v=c1InKqFJbsI&list=PLR3CNIF8DDHJUl8RLhyOVpX_kT4bxulEV&index=3>`_ 
 
-`Tutorial 2: Introduction to pyhealth.tasks <https://colab.research.google.com/drive/1QB0acnGb-wOuK53UNSgHxjCW74QeYjUl?usp=sharing>`_  `[Video (PyHealth 1.16)] <https://www.youtube.com/watch?v=CxESe1gYWU4&list=PLR3CNIF8DDHJUl8RLhyOVpX_kT4bxulEV&index=4>`_ 
+`Tutorial 2: Introduction to pyhealth.tasks <https://colab.research.google.com/drive/1QB0acnGb-wOuK53UNSgHxjCW74QeYjUl?usp=sharing>`_  `[Video (PyHealth 1.x legacy)] <https://www.youtube.com/watch?v=CxESe1gYWU4&list=PLR3CNIF8DDHJUl8RLhyOVpX_kT4bxulEV&index=4>`_ 
 
 `Tutorial 3: Introduction to pyhealth.models <https://colab.research.google.com/drive/1cUTSfFL1wLUXDBtJGTAWntolvcmxrDGo?usp=drive_link>`_  `[Video] <https://www.youtube.com/watch?v=fRc0ncbTgZA&list=PLR3CNIF8DDHJUl8RLhyOVpX_kT4bxulEV&index=6>`_ 
 

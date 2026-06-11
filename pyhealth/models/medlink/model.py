@@ -486,7 +486,7 @@ if __name__ == "__main__":
     from pyhealth.tasks import PatientLinkageMIMIC3Task
 
     base_dataset = MIMIC3Dataset(
-        root="/srv/local/data/physionet.org/files/mimiciii/1.4",
+        root="/path/to/data/physionet.org/files/mimiciii/1.4",
         tables=["DIAGNOSES_ICD", "ADMISSIONS", "PATIENTS"], # added tables for task class
         code_mapping={"ICD9CM": ("CCSCM", {})},
         dev=False,

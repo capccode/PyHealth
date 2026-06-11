@@ -2,9 +2,12 @@ import requests
 import json
 import os
 
-key = os.environ['OPENAI_API_KEY']
 
 def embedding_retrieve(term):
+    # The API key is read lazily so that importing this module does not
+    # require OPENAI_API_KEY to be set.
+    key = os.environ['OPENAI_API_KEY']
+
     # Set up the API endpoint URL and request headers
     url = "https://api.openai.com/v1/embeddings"
     headers = {
