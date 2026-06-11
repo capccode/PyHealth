@@ -44,7 +44,7 @@ class TUABDataset(BaseDataset):
     Examples:
         >>> from pyhealth.datasets import TUABDataset
         >>> dataset = TUABDataset(
-        ...         root="/srv/local/data/TUH/tuh_eeg_abnormal/v3.0.0/edf/",
+        ...         root="/path/to/data/TUH/tuh_eeg_abnormal/v3.0.0/edf/",
         ...     )
         >>> dataset.stat()
         >>> dataset.info()

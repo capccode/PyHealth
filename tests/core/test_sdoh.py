@@ -1,5 +1,6 @@
 from typing import Set
-from tests.base import BaseTestCase
+import unittest
+from tests.base import BaseTestCase, hf_hub_accessible
 from pyhealth.models.sdoh import SdohClassifier
 
 
@@ -19,6 +20,9 @@ class TestSdoh(BaseTestCase):
             parsed = '-' if len(parsed) == 0 else parsed
             self.assertEqual(parsed, preds)
 
+    @unittest.skipUnless(
+        hf_hub_accessible(), "Hugging Face Hub not accessible"
+    )
     def test_predict(self):
         """Test SDOH prediction."""
         # example sentence

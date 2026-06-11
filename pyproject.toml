@@ -6,7 +6,7 @@
 [project]
 name = "pyhealth"
 # must be kept in sync with git tags; is not updated by any automation tools
-version = "2.0.0"
+version = "2.0.1"
 authors = [
   {name = "John Wu", email = "johnwu3@illinois.edu"},
   {name = "Chaoqi Yang"},
@@ -15,7 +15,7 @@ authors = [
   {name = "Zhen Lin"},
   {name = "Benjamin Danek"},
   {name = "Junyi Gao"},
-  {name = "Paul Landes", email = "landes@mailc.net"},
+  {name = "Paul Landes", email = "plande2@uic.edu"},
   {name = "Jimeng Sun"},
 ]
 description = "A Python library for healthcare AI"
@@ -41,6 +41,7 @@ dependencies = [
   "dask[complete]~=2025.11.0",
   "litdata~=0.2.59",
   "pyarrow~=22.0.0",
+  "orjson~=3.10",
   "narwhals~=2.13.0",
   "more-itertools~=10.8.0",
   "einops>=0.8.0",
@@ -57,6 +58,16 @@ keywords = [
   "data mining",
   "neural networks",
   "deep learning",
+]
+
+[project.optional-dependencies]
+graph = [
+  "torch-geometric>=2.6.0",
+]
+nlp = [
+  "rapidfuzz>=3.0.0",
+  "rouge_score~=0.1.2",
+  "nltk~=3.9.1",
 ]
 
 [project.urls]
@@ -97,7 +108,7 @@ build-env = { features = ["pyverbase", "build-env"], solve-group = "default" }
 # specify where to download the build backend that builds conda files
 [tool.pixi.package.build.backend]
 name = "pixi-build-python"
-version = "2.0.0"
+version = "==2.0.1"
 channels = [
   "https://prefix.dev/pixi-build-backends",
   "https://prefix.dev/conda-forge", 

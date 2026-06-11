@@ -29,7 +29,7 @@ def sleep_staging_isruc_fn(record, epoch_seconds=10, label_id=1):
     Examples:
         >>> from pyhealth.datasets import ISRUCDataset
         >>> isruc = ISRUCDataset(
-        ...         root="/srv/local/data/data/ISRUC-I", download=True,
+        ...         root="/path/to/data/data/ISRUC-I", download=True,
         ...     )
         >>> from pyhealth.tasks import sleep_staging_isruc_fn
         >>> sleepstage_ds = isruc.set_task(sleep_staging_isruc_fn)
@@ -133,7 +133,7 @@ def sleep_staging_sleepedf_fn(record, epoch_seconds=30):
     Examples:
         >>> from pyhealth.datasets import SleepEDFDataset
         >>> sleepedf = SleepEDFDataset(
-        ...         root="/srv/local/data/SLEEPEDF/sleep-edf-database-expanded-1.0.0/sleep-cassette",
+        ...         root="/path/to/data/SLEEPEDF/sleep-edf-database-expanded-1.0.0/sleep-cassette",
         ...     )
         >>> from pyhealth.tasks import sleep_staging_sleepedf_fn
         >>> sleepstage_ds = sleepedf.set_task(sleep_staging_sleepedf_fn)
@@ -241,7 +241,7 @@ def sleep_staging_shhs_fn(record, epoch_seconds=30):
     Examples:
         >>> from pyhealth.datasets import SHHSDataset
         >>> shhs = SHHSDataset(
-        ...         root="/srv/local/data/SHHS/polysomnography",
+        ...         root="/path/to/data/SHHS/polysomnography",
         ...         dev=True,
         ...     )
         >>> from pyhealth.tasks import sleep_staging_shhs_fn
@@ -334,7 +334,7 @@ if __name__ == "__main__":
 
     """ test sleep edf"""
     # dataset = SleepEDFDataset(
-    #     root="/srv/local/data/SLEEPEDF/sleep-edf-database-expanded-1.0.0/sleep-telemetry",
+    #     root="/path/to/data/SLEEPEDF/sleep-edf-database-expanded-1.0.0/sleep-telemetry",
     #     dev=True,
     #     refresh_cache=True,
     # )
@@ -347,7 +347,7 @@ if __name__ == "__main__":
 
     # """ test ISRUC"""
     # dataset = ISRUCDataset(
-    #     root="/srv/local/data/trash/",
+    #     root="/path/to/data/trash/",
     #     dev=True,
     #     refresh_cache=True,
     #     download=True,
@@ -360,7 +360,7 @@ if __name__ == "__main__":
     # print(sleep_staging_ds.input_info)
     
     dataset = SHHSDataset(
-        root="/srv/local/data/SHHS/polysomnography",
+        root="/path/to/data/SHHS/polysomnography",
         dev=True,
         refresh_cache=True,
     )

@@ -183,7 +183,7 @@ def main():
     # Test case for MIMIC4ICD9Coding and MIMIC3
     from pyhealth.datasets import MIMIC3Dataset, MIMIC4Dataset
 
-    root = "/srv/local/data/MIMIC-III/mimic-iii-clinical-database-1.4"
+    root = "/path/to/data/MIMIC-III/mimic-iii-clinical-database-1.4"
     print("Testing MIMIC3ICD9Coding task...")
     dataset = MIMIC3Dataset(
         root=root,
@@ -209,9 +209,9 @@ def main():
     # Initialize the dataset with dev mode enabled
     print("Testing MIMIC4ICD9Coding task...")
     dataset = MIMIC4Dataset(
-        root="/srv/local/data/MIMIC-IV/2.0/hosp",
+        root="/path/to/data/MIMIC-IV/2.0/hosp",
         tables=["diagnoses_icd", "procedures_icd"],
-        note_root="/srv/local/data/MIMIC-IV/2.0/note",
+        note_root="/path/to/data/MIMIC-IV/2.0/note",
         dev=True,
     )
     # Create the task instance

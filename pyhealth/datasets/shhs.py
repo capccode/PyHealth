@@ -34,7 +34,7 @@ class SHHSDataset(BaseSignalDataset):
     Examples:
         >>> from pyhealth.datasets import SHHSDataset
         >>> dataset = SHHSDataset(
-        ...         root="/srv/local/data/SHHS/",
+        ...         root="/path/to/data/SHHS/",
         ...     )
         >>> dataset.stat()
         >>> dataset.info()
@@ -106,7 +106,7 @@ class SHHSDataset(BaseSignalDataset):
 
 if __name__ == "__main__":
     dataset = SHHSDataset(
-        root="/srv/local/data/SHHS/polysomnography",
+        root="/path/to/data/SHHS/polysomnography",
         dev=True,
         refresh_cache=True,
     )

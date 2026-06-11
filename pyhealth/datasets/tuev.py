@@ -46,7 +46,7 @@ class TUEVDataset(BaseDataset):
         >>> from pyhealth.datasets import TUEVDataset
         >>> from pyhealth.tasks import EEGEventsTUEV
         >>> dataset = TUEVDataset(
-        ...         root="/srv/local/data/TUH/tuh_eeg_events/v2.0.0/edf/",
+        ...         root="/path/to/data/TUH/tuh_eeg_events/v2.0.0/edf/",
         ...     )
         >>> dataset.stats()
         >>> sample_dataset = dataset.set_task(EEGEventsTUEV())

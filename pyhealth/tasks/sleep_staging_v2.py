@@ -53,7 +53,7 @@ class SleepStagingSleepEDF(BaseTask):
         Examples:
             >>> from pyhealth.datasets import SleepEDFDataset
             >>> sleepedf = SleepEDFDataset(
-            ...         root="/srv/local/data/SLEEPEDF/sleep-edf-database-expanded-1.0.0/sleep-cassette",
+            ...         root="/path/to/data/SLEEPEDF/sleep-edf-database-expanded-1.0.0/sleep-cassette",
             ...     )
             >>>
             >>> sleepstage_ds = sleepedf.set_task()

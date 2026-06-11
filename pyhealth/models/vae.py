@@ -163,7 +163,7 @@ if __name__ == "__main__":
     from pyhealth.datasets import COVID19CXRDataset
     from torchvision import transforms
     
-    root = "/srv/local/data/COVID-19_Radiography_Dataset"
+    root = "/path/to/data/COVID-19_Radiography_Dataset"
     base_dataset = COVID19CXRDataset(root, dev=True, refresh_cache=False)
     
     sample_dataset = base_dataset.set_task()

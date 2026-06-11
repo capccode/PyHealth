@@ -2,6 +2,16 @@ Development logs
 ======================
 We track the new development here:
 
+**2026**
+
+.. code-block:: rst
+
+    1. PyHealth 2.0 release: unified multimodal pipeline (EHR, images,
+       biosignals, clinical text, genomics), Polars-backed dataset loading
+       with caching, processor-based feature schemas, LitData-backed
+       SampleDataset streaming, and the PyHealth 2.0 paper
+       (arXiv:2601.16414).
+
 **Dec 29, 2023**
 
 ..code-blocks:: rst

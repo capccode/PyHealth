@@ -345,7 +345,7 @@ if __name__ == "__main__":
     from pyhealth.tasks import sleep_staging_isruc_fn
 
     sleep_ds = ISRUCDataset(
-        root="/srv/local/data/trash/",
+        root="/path/to/data/trash/",
         dev=True,
     ).set_task(sleep_staging_isruc_fn)
     train_data, val_data, test_data = split_by_patient(sleep_ds, [0.6, 0.2, 0.2])

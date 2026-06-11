@@ -12,6 +12,7 @@ from .cardiology_detect import (
 from .chestxray14_binary_classification import ChestXray14BinaryClassification
 from .chestxray14_multilabel_classification import ChestXray14MultilabelClassification
 from .covid19_cxr_classification import COVID19CXRClassification
+from .deid_ner import DeIDNERTask
 from .dka import DKAPredictionMIMIC4, T1DDKAPredictionMIMIC4
 from .drug_recommendation import (
     DrugRecommendationEICU,
@@ -21,8 +22,6 @@ from .drug_recommendation import (
     drug_recommendation_mimic4_fn,
     drug_recommendation_omop_fn,
 )
-from .EEG_abnormal import EEG_isAbnormal_fn
-from .EEG_events import EEG_events_fn
 from .in_hospital_mortality_mimic4 import InHospitalMortalityMIMIC4
 from .length_of_stay_prediction import (
     LengthOfStayPredictioneICU,
@@ -46,6 +45,13 @@ from .survival_preprocess_support2 import SurvivalPreprocessSupport2
 from .mortality_prediction_stagenet_mimic4 import (
     MortalityPredictionStageNetMIMIC4,
 )
+from .generate_ehr import (
+    EHRGeneration,
+    EHRGenerationMIMIC3,
+    EHRGenerationMIMIC4,
+    decode_dataset,
+    to_evaluation_dataframe,
+)
 from .patient_linkage import patient_linkage_mimic3_fn
 from .readmission_prediction import (
     ReadmissionPredictionEICU,
@@ -68,3 +74,11 @@ from .variant_classification import (
     VariantClassificationClinVar,
 )
 from .patient_linkage_mimic3 import PatientLinkageMIMIC3Task
+
+
+def __getattr__(name: str):
+    if name == "MPFClinicalPredictionTask":
+        from .mpf_clinical_prediction import MPFClinicalPredictionTask
+
+        return MPFClinicalPredictionTask
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")

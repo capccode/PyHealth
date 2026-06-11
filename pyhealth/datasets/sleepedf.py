@@ -46,7 +46,7 @@ class SleepEDFDataset(BaseDataset):
     Examples:
         >>> from pyhealth.datasets import SleepEDFDataset
         >>> dataset = SleepEDFDataset(
-        ...         root="/srv/local/data/SLEEPEDF/sleep-edf-database-expanded-1.0.0/",
+        ...         root="/path/to/data/SLEEPEDF/sleep-edf-database-expanded-1.0.0/",
         ...     )
         >>> dataset.stat()
         >>> dataset.info()

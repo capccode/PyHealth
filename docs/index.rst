@@ -7,12 +7,19 @@ Welcome to PyHealth
 
 **The Python Library for Healthcare AI**
 
-Build, test, and deploy healthcare machine learning models with ease. PyHealth is designed for both **ML researchers and medical practitioners**. We can make your **healthcare AI applications** easier to develop, test and validate. Your development process becomes more flexible and more customizable. `[GitHub] <https://github.com/sunlabuiuc/PyHealth>`_ 
+.. card:: 🌐 Visit the PyHealth Project Website
+   :link: https://pyhealth.dev
+   :link-type: url
+   :class-card: sd-bg-primary sd-text-white sd-text-center
+
+   **pyhealth.dev** — the new home for PyHealth news, updates, and resources →
+
+Build, test, and deploy healthcare machine learning models with ease. PyHealth is designed for both **ML researchers and medical practitioners**. We can make your **healthcare AI applications** easier to develop, test and validate. Your development process becomes more flexible and more customizable. `[GitHub] <https://github.com/sunlabuiuc/PyHealth>`_
 
 **Key Features**
 
 - **Dramatically simpler**: Build any healthcare AI model in ~7 lines of code
-- **Blazing fast**: Up to 39× faster than pandas
+- **Blazing fast**: Up to 39× faster than pandas for task processing
 - **Memory efficient**: Runs on 16GB laptops 
 - **True multimodal**: Unified API for EHR, medical images, biosignals, clinical text, and genomics
 - **Production-ready**: 25+ pre-built models, 20+ tasks, 12+ datasets with comprehensive evaluation tools
@@ -35,12 +42,12 @@ Build, test, and deploy healthcare machine learning models with ease. PyHealth i
    :target: https://pypi.org/project/pyhealth/
    :alt: PyPI version
 
-.. image:: https://img.shields.io/github/stars/yzhao062/pyhealth.svg
+.. image:: https://img.shields.io/github/stars/sunlabuiuc/pyhealth.svg
    :target: https://github.com/sunlabuiuc/pyhealth/stargazers
    :alt: GitHub stars
 
 
-.. image:: https://img.shields.io/github/forks/yzhao062/pyhealth.svg?color=blue
+.. image:: https://img.shields.io/github/forks/sunlabuiuc/pyhealth.svg?color=blue
    :target: https://github.com/sunlabuiuc/pyhealth/network
    :alt: GitHub forks
 
@@ -62,37 +69,11 @@ Build, test, and deploy healthcare machine learning models with ease. PyHealth i
 
 ----------
 
- **[News!]** Join us for **PyHealth Casual Chats** – informal sessions where you can ask questions, discuss research ideas, or talk about PyHealth developments! Everyone is welcome. `Join Zoom → <https://illinois.zoom.us/j/83607767000?pwd=xXKdKKs2YBH8d0UMWeUiYNEl0lhDoU.1>`_ | `Add to Calendar → <https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGY5NXM1ZnF1MWQ1cnFpdmxxMzNodTNlM2pfMjAyNTEyMTJUMTgwMDAwWiBqb2hud3UzQGlsbGlub2lzLmVkdQ&tmsrc=johnwu3%40illinois.edu&scp=ALL>`_
+ **[News!]** Join us for **PyHealth Casual Chats** – informal sessions where you can ask questions, discuss research ideas, or talk about PyHealth developments! Everyone is welcome. `Join Zoom → <https://illinois.zoom.us/j/83607767000?pwd=xXKdKKs2YBH8d0UMWeUiYNEl0lhDoU.1>`_ | `Add to Calendar → <https://calendar.app.google/mo9G9RNY5XRLo6hu5>`_
 
  **[News!]** We are continuously implementing good papers and benchmarks into PyHealth, checkout the `[Planned List] <https://docs.google.com/spreadsheets/d/1PNMgDe-llOm1SM5ZyGLkmPysjC4wwaVblPLAHLxejTw/edit#gid=159213380>`_. Welcome to pick one from the list and send us a PR or add more influential and new papers into the plan list.
 
 ----------
-
-
-.. -----
-
-
-.. **Build Status & Coverage & Maintainability & License**
-
-.. .. image:: https://travis-ci.org/yzhao062/pyhealth.svg?branch=master
-..    :target: https://travis-ci.org/yzhao062/pyhealth
-..    :alt: Build Status
-
-
-.. .. image:: https://ci.appveyor.com/api/projects/status/1kupdy87etks5n3r/branch/master?svg=true
-..    :target: https://ci.appveyor.com/project/yzhao062/pyhealth/branch/master
-..    :alt: Build status
-
-
-.. .. image:: https://api.codeclimate.com/v1/badges/bdc3d8d0454274c753c4/maintainability
-..    :target: https://codeclimate.com/github/yzhao062/pyhealth/maintainability
-..    :alt: Maintainability
-
-
-.. .. image:: https://img.shields.io/github/license/yzhao062/pyhealth
-..    :target: https://github.com/yzhao062/pyhealth/blob/master/LICENSE
-..    :alt: License
-
 
 
 Get Started in Minutes
@@ -189,15 +170,6 @@ Quick Navigation
 
 
 
-.. **Key Links and Resources**\ :
-
-
-.. * `View the latest codes on Github <https://github.com/ycq091044/PyHealth-OMOP>`_
-.. * `Execute Interactive Jupyter Notebooks <https://mybinder.org/v2/gh/yzhao062/pyhealth/master>`_
-.. * `Check out the PyHealth paper <https://github.com/yzhao062/pyhealth>`_
-
-
-
 ----
 
 
@@ -221,6 +193,7 @@ Quick Navigation
    :hidden:
    :caption: Documentation
 
+   api/overview
    api/data
    api/datasets
    api/graph
